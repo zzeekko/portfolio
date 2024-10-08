@@ -6,23 +6,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 <body>
     <header class="header" id="header">
-        <div class="container">
+        <div class="container" id="headerSection">
             <div class="row">
                 <div class="col-md-5">
                     <h1 class="text-uppercase">zeek</h1>
                 </div>
                 <div class="col-md-7">
-                    <nav class="top-nav">
+                    <nav class="navbar navbar-expand-xl d-md-none">
+                        <div class="container-fluid">
+                            <button
+                                class="navbar-toggler"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#topNavbar"
+                                aria-controls="topNavbar"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation"
+                            >
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="topNavbar">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="#header" class="nav-link text-capitalize">about me</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#main" class="nav-link text-capitalize">projects</a>
+                                    </li>     
+                                    <li class="nav-item">
+                                        <a href="#footer" class="nav-link text-capitalize">contact me</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav class="nav top-nav justify-content-md-end d-none d-md-flex">
                         <ul>
-                            <li class="nav-item">About Me</li>
-                            <li class="nav-item">Projects</li>
-                            <li class="nav-item">Contact</li>
+                            <li class="nav-item">
+                                <a href="#header" class="nav-link text-capitalize">about me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#main" class="nav-link text-capitalize">projects</a>
+                            </li>     
+                            <li class="nav-item">
+                                <a href="#footer" class="nav-link text-capitalize">contact me</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -30,10 +65,14 @@
         </div>
     </header>
     <main class="main" id="main">
-        <div class="container">
+        <div class="container" id="mainSection">
             <div class="row">
                 <div class="col-md-7">
-                    <h2 class="text-uppercase">Who am I?</h2>
+                    <h2 class="text-uppercase">who am I?</h2>
+                    <figure class="d-md-none">
+                        <img src="images/Headshot.jpeg" alt="Headshot of me, Zeek" class="img-fluid rounded-3">
+                        <figcaption class="text-capitalize text-center"><i class="bi bi-arrow-90deg-up"></i>me</figcaption>
+                    </figure>
                     <p>Nobody can truly answer that question, but my attempt would be that I'm currently a Junior Web Developer at Mississippi Coding Academies. Depending on who you ask, I'm an introvert or an extrovert, but I really prefer to keep to myself. I read a lot of manga, I enjoy narrative analysis and I write <a href="https://www.scribblehub.com/series/598245/halcyon-heart/#:~:text=Four%20friends%20with%20differing%20beliefs%20are%20forced%20by%20a%20higher"> my own webnovel</a>, with art by my girlfriend. Since I was a kid, I've been messing with computer code. If you know about M.U.G.E.N, that was where my interest was born. I liked video games a lot and the idea of being able to make my own with people from around the world got me into problem solving through changing lines of code. It was annoying, but it was always rewarding when it worked out. I had a knack for finding solutions.</p>
                     <p>
                         If you're curious about some of my favorite pieces of media:
@@ -46,30 +85,58 @@
                             <li>Hajime no Ippo</li>
                         </ul>
                     </p>
+                    <p>I look forward to working with you.</p>
                 </div>
                 <div class="col-md-5">
-                    <figure>
-                        <img src="images/Headshot.jpeg" alt="Headshot of me, Ezekiel Cary" class="img-fluid rounded-3">
-                        <figcaption class="text-uppercase">ezekiel cary</figcaption>
+                    <figure class="d-none d-md-block">
+                        <img src="images/Headshot.jpeg" alt="Headshot of me, Zeek" class="img-fluid rounded-3">
+                        <figcaption class="text-capitalize text-center"><i class="bi bi-arrow-90deg-up"></i>me</figcaption>
                     </figure>
                 </div>
             </div>
         </div>
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+                <!-- placeholders, will make full cards later -->
+                <div class="col-md-6">
+                    <div class="card lead-items">
+                        <header class="card-header card-h">
+                            <h2 class="display-1 card-h2">bloom</h2>
+                            <img src="images/sincerely_media.jpg"/>
+                        </header>
+                        <div class="card-body card-bg">
+                            <p class="card-text">Made with bootstrap.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">detroixbs</div>
+                <div class="col-md-6">restaurant</div>
+                <div class="col-md-6">scamazon</div>
+            </div>
+        </div>
     </main>
-    <footer class="footer" id="footer">
-        <nav class="social-nav">
+    <footer class="footer" id="footerSection1">
+        <nav class="nav social-nav">
             <ul>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/ezekiel-cary-48aa06331/" class="nav-link">LinkedIn</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Github</a>
+                    <a href="https://github.com/zzeekko" class="nav-link">Github</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Email</a>
                 </li>
             </ul>
         </nav>
+        <div class="footer" id="footerSection2">
+            <p class="colophon text-capitalize">read
+                <a href="https://tirkom.thecomicseries.com/" target="_blank" class="text">tirkom</a>
+                &copy; 2024
+            </p>
+            <p class="text-center text-md-start"><a href="#header">Back to Top</a></p>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

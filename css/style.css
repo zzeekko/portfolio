@@ -1,8 +1,18 @@
 :root {
-    
+    --header: #D0A3BF;
+    --body: #DEF2C8;
+    --footer: #69747C;
     --font1: "Libre Baskerville", serif;
     --font2: "Dela Gothic One", sans-serif;
     --font3: "Sedgwick Ave", cursive;
 }
 
 * {box-sizing: border-box;}
+
+#mainSection {
+    background-color: var(--body);
+}
+
+#headerSection {
+    background-color: var(--header);
+}
