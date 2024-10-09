@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Sedgwick+Ave&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
         <div class="container" id="headerSection">
             <div class="row">
                 <div class="col-md-5">
-                    <h1 class="text-uppercase">zeek</h1>
+                    <h1 class="heading text-uppercase">zeek</h1>
                 </div>
                 <div class="col-md-7">
                     <nav class="navbar navbar-expand-xl d-md-none">
@@ -35,13 +35,13 @@
                             <div class="collapse navbar-collapse" id="topNavbar">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
-                                        <a href="#header" class="nav-link text-capitalize">about me</a>
+                                        <a href="#header" class="link nav-link text-capitalize">about me</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#main" class="nav-link text-capitalize">projects</a>
+                                        <a href="#main" class="link nav-link text-capitalize">projects</a>
                                     </li>     
                                     <li class="nav-item">
-                                        <a href="#footer" class="nav-link text-capitalize">contact me</a>
+                                        <a href="#footer" class="link nav-link text-capitalize">contact me</a>
                                     </li>
                                 </ul>
                             </div>
@@ -50,13 +50,13 @@
                     <nav class="nav top-nav justify-content-md-end d-none d-md-flex">
                         <ul>
                             <li class="nav-item">
-                                <a href="#header" class="nav-link text-capitalize">about me</a>
+                                <a href="#header" class="link nav-link text-capitalize">about me</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#main" class="nav-link text-capitalize">projects</a>
+                                <a href="#main" class="link nav-link text-capitalize">projects</a>
                             </li>     
                             <li class="nav-item">
-                                <a href="#footer" class="nav-link text-capitalize">contact me</a>
+                                <a href="#footer" class="link nav-link text-capitalize">contact me</a>
                             </li>
                         </ul>
                     </nav>
@@ -65,7 +65,7 @@
         </div>
     </header>
     <main class="main" id="main">
-        <div class="container" id="mainSection">
+        <div class="container" id="aboutSection">
             <div class="row">
                 <div class="col-md-7">
                     <h2 class="text-uppercase">who am I?</h2>
@@ -95,38 +95,39 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="projectsSection">
             <h2>Projects</h2>
             <div class="row">
-                <!-- make these sites live (except detroix) and include thumbnails with screenshots of the pages -->
+                <!-- make these sites live (except detroix) -->
                 <div class="col-md-6">
                     <div class="card lead-items">
                         <header class="card-header card-h">
                             <h2 class="display-1 card-h2">Detroix</h2>
-                            <img src=""/>
+                            <img src="images/detroix.png" alt="Thumbnail for Detroix" class="img-fluid image card-img"/>
                         </header>
                         <div class="card-body card-bg">
                             <p class="card-text">First project. Done three different times with Float, Position and Flexbox.</p>
                         </div>
                         <footer class="card-footer card-f">
                             <button class="btn text-capitalize mb-2">
-                                <a href="https://github.com/zzeekko/detroix">Source Code</a>
+                                <a href="https://github.com/zzeekko/detroix" class="card-f-link">Source Code</a>
                             </button>
                         </footer>
                     </div>
                 </div>
                 <div class="col-md-6">
+                    <!-- make this card a couple pixels taller -->
                     <div class="card lead-items">
                         <header class="card-header card-h">
                             <h2 class="display-1 card-h2">Bloom</h2>
-                            <img src=""/>
+                            <img src="images/bloom.png" alt="Thumbnail for Bloom" class="img-fluid image card-img"/>
                         </header>
                         <div class="card-body card-bg">
                             <p class="card-text">First time using Bootstrap.</p>
                         </div>
                         <footer class="card-footer card-f">
                             <button class="btn text-capitalize mb-2">
-                                <a href="https://github.com/zzeekko/bloom-bootstrap">Source Code</a>
+                                <a href="https://github.com/zzeekko/bloom-bootstrap" class="link">Source Code</a>
                             </button>
                         </footer>
                     </div>
@@ -135,14 +136,14 @@
                     <div class="card lead-items">
                         <header class="card-header card-h">
                             <h2 class="display-1 card-h2">Scamazon</h2>
-                            <img src=""/>
+                            <img src="images/scamazon.png" alt="Thumbnail for Scamazon" class="img-fluid image card-img"/>
                         </header>
                         <div class="card-body card-bg">
                             <p class="card-text">Early Bootstrap project with a focus on design.</p>
                         </div>
                         <footer class="card-footer card-f">
                             <button class="btn text-capitalize mb-2">
-                                <a href="https://github.com/zzeekko/scamazon">Source Code</a>
+                                <a href="https://github.com/zzeekko/scamazon" class="card-f-link">Source Code</a>
                             </button>
                         </footer>
                     </div>
@@ -151,14 +152,14 @@
                     <div class="card lead-items">
                         <header class="card-header card-h">
                             <h2 class="display-1 card-h2">Restaurant</h2>
-                            <img src=""/>
+                            <img src="images/restaurant.png" alt="Thumbnail for Restaurant" class="img-fluid image card-img"/>
                         </header>
                         <div class="card-body card-bg">
                             <p class="card-text">First project with multiple pages.</p>
                         </div>
                         <footer class="card-footer card-f">
                             <button class="btn text-capitalize mb-2">
-                                <a href="https://github.com/zzeekko/restaurant">Source Code</a>
+                                <a href="https://github.com/zzeekko/restaurant" class="card-f-link">Source Code</a>
                             </button>
                         </footer>
                     </div>
@@ -166,30 +167,36 @@
             </div>
         </div>
     </main>
-    <footer class="footer" id="footerSection1">
-        <nav class="nav social-nav">
-            <ul>
-                <li class="nav-item">
-                    <a href="https://x.com/ezzeekkiel" class="nav-link">Twitter</a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://www.linkedin.com/in/ezekiel-cary-48aa06331/" class="nav-link">LinkedIn</a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://github.com/zzeekko" class="nav-link">Github</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Email</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="footer" id="footerSection2">
-            <p class="colophon text-capitalize">read
-                <a href="https://tirkom.thecomicseries.com/" target="_blank" class="text">tirkom</a>
+    <footer class="footer" id="footer">
+        <section class="section" id="footerSection2">
+            <nav class="nav social-nav">
+                <ul>
+                    <li class="nav-item">
+                        <a href="https://x.com/ezzeekkiel" class="link nav-link">Twitter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/ezekiel-cary-48aa06331/" class="link nav-link">LinkedIn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/zzeekko" class="link nav-link">Github</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- look on youtube to see if you can make this function -->
+            <form action="#" class="form" id="myForm">
+                <label for="email">Your Email</label>
+                <input type="text" id="email" required />
+                <label for="text">Type Here</label>
+                <input type="text" id="text" required />
+            </form>
+        </section>
+        <section class="section" id="footerSection2">
+            <p class="fs2-text colophon text-capitalize">read
+                <a href="https://tirkom.thecomicseries.com/" target="_blank" class="fs2-text">tirkom</a>
                 &copy; 2024
             </p>
-            <p class="text-center text-md-start"><a href="#header">Back to Top</a></p>
-        </div>
+            <p><a href="#header" class="fs2-text text-center text-md-start">Back to Top</a></p>
+        </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

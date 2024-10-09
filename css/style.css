@@ -1,18 +1,59 @@
 :root {
-    --header: #D0A3BF;
-    --body: #DEF2C8;
-    --footer: #69747C;
+    --prim: #DEF2C8;
+    --sec: #D0A3BF;
+    --tert: #69747C;
+    --purple: #0F110C;
+    --orange: #69747C;
     --font1: "Libre Baskerville", serif;
     --font2: "Dela Gothic One", sans-serif;
     --font3: "Sedgwick Ave", cursive;
 }
 
-* {box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+    font-family: var(--font1);
+}
 
-#mainSection {
-    background-color: var(--body);
+/* change it so that the bg colors go across the whole width */
+
+.card-bg {
+    background-color: var(--orange);
+}
+
+.card-h {
+    background-color: var(--orange);
+}
+
+.card-h2 {
+    text-align: center;
+    font-weight: 500;
+    font-family: var(--font3);
+}
+
+.card-f {
+    background-color: var(--purple);
+}
+
+.fs2-text {
+    font-family: var(--font2);
+}
+
+.link {
+    font-family: var(--font2);
+}
+
+.heading {
+    font-family: var(--font3);
+}
+
+#aboutSection, #projectsSection {
+    background-color: var(--prim);
+}
+
+#footer {
+    background-color: var(--sec);
 }
 
 #headerSection {
-    background-color: var(--header);
+    background-color: var(--sec);
 }
