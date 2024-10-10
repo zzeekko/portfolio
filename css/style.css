@@ -1,3 +1,5 @@
+/* these colors are ugly, work with someone who has better taste on this */
+
 :root {
     --prim: #DEF2C8;
     --sec: #D0A3BF;
@@ -38,15 +40,31 @@
     font-family: var(--font2);
 }
 
-.link {
-    font-family: var(--font2);
-}
-
 .heading {
     font-family: var(--font3);
 }
 
-#aboutSection, #projectsSection {
+.link {
+    font-family: var(--font2);
+}
+
+.nav-link {
+    color: #444;
+}
+
+.nav-link:hover {
+    color: var(--orange);
+}
+
+.social-link {
+    color: red;
+}
+
+.top-nav {
+    list-style-type: none;
+}
+
+#homeSection, #projectsSection {
     background-color: var(--prim);
 }
 
