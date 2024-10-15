@@ -17,7 +17,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5">
-                        <!-- i think i would prefer if the header was closer to the center and maybe didnt have the name, at least change the font so its not the same as the other headings -->
+                        <!-- see how this looks if you put the name on top of the nav and put them both in the center -->
                         <h1 class="heading text-uppercase">zeek</h1>
                     </div>
                     <div class="col-md-7">
@@ -74,10 +74,10 @@
         </section>
     </header>
     <main class="main" id="main">
-        <!-- make sections, take this ID off and give it to the section-->
         <section class="section" id="homeSection">
             <div class="container">
                 <div class="row flex-column-reverse flex-md-row">
+                    <!-- these flex attributes are so that the image will display to the right on desktop but above the text on mobile -->
                     <div class="col-md-7">
                         <div class="home-box h-100 d-flex flex-column justify-content-md-evenly align-items-md-center">
                             <h2 class="text-uppercase heading">welcome to my portfolio</h2>
@@ -85,7 +85,7 @@
                                 <img src="images/Headshot.jpeg" alt="Headshot of me, Zeek" class="img-fluid rounded-3">
                                 <figcaption class="text-capitalize text-center"><i class="bi bi-arrow-90deg-up"></i>me</figcaption>
                             </figure> -->
-                            <p>I am Ezekiel Cary, a junior web developer at Mississippi Coding Academies' Jackson campus. Call me Zeek, though.</p>
+                            <p>I am Ezekiel Cary, a junior web developer at Mississippi Coding Academies' Jackson campus. Call me Zeek, though. I'm a quick learner willing to learn any new language if it's for the sake of a client. Just don't ask me to come up with any designs by myself. I don't do aesthetics very well, I prefer to translate other peoples' designs into functioning code. I work quickly and efficiently and I don't take unnecessary liberties.</p>
                             <p>I look forward to working with you.</p>
                         </div>
                     </div>
@@ -98,103 +98,107 @@
                 </div>
             </div>
         </section>
-        <div class="container" id="aboutSection">
-            <div class="row">
-                <div class="col-md-7">
-                    <h2 class="text-uppercase heading">who am I?</h2>
-                    <p>I've been broke my whole life, doing everything I can to help my single mother take care of me and my brother. School was always a nightmare. Social anxiety ate away at me and I never felt stimulated by any of the things they wanted me to do. I felt like I already knew it and I had no desire to show up. Combined with having to constantly move due to rent getting too high, I was unable to finish. This ended with me, my mother and a bunch of teachers in a room where they told us that they weren't equipped for me and that I should pursue homeschooling. My mother wanted to do whatever she could for me but she was working two jobs and could not do what was needed, so that didn't work either. I've recently obtained my GED with relative ease. Finally, I've found my opportunity to pay back what everyone has done for me. I'm eager to get started working with anyone who's interested. My goal is to become a fullstack web developer and make enough money to support my dear family, as well as my boring hobbies. Preferably from home so that I don't have to be away from my girlfriend for too long at a time. I prefer to keep to myself but I also consider myself good at socializing. I read a lot of manga, I enjoy narrative analysis and I write <a href="https://www.scribblehub.com/series/598245/halcyon-heart/#:~:text=Four%20friends%20with%20differing%20beliefs%20are%20forced%20by%20a%20higher"> my own webnovel</a>, with art by my girlfriend. Since I was a kid, I've been messing with computer code. If you know about M.U.G.E.N, that was where my interest was born. I liked video games a lot and the idea of being able to make my own with people from around the world got me into problem solving through changing lines of code. It was annoying, but it was always rewarding when it worked out. I had a knack for finding solutions.</p>
-                    <p>
-                        If you're curious about some of my favorite pieces of media:
-                        <ul>
-                            <li>Yu-Gi-Oh</li>
-                            <li>Attack on Titan</li>
-                            <li>Persona</li>
-                            <li>Bleach</li>
-                            <li>Breaking Bad</li>
-                            <li>Guilty Gear</li>
-                        </ul>
-                    </p>
-                    <p>Talk to me about any of these, if you're bored.</p>
-                </div>
-                <div class="col-md-5">
-                    <figure>
-                        <img src="https://via.placeholder.com/250x250" alt="Photo of me coding." class="img-fluid image" />
-                        <figcaption class="text-capitalize text-center"><i class="bi bi-arrow-90deg-up"></i>also me</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
-        <div class="container" id="projectsSection">
-            <h2>Projects</h2>
-            <div class="row gy-3 row-cols-1 row-cols-md-2 row-cols-lg-4">
-                <!-- make these sites live (except detroix) -->
-                <div class="col">
-                    <div class="card lead-items h-100">
-                        <header class="card-header card-h">
-                            <h2 class="card-h2">Detroix</h2>
-                            <img src="images/detroix.png" alt="Thumbnail for Detroix" class="img-fluid image card-img"/>
-                        </header>
-                        <div class="card-body card-bg">
-                            <p class="card-text">My first project. Three stylesheets each for Float, Position and Flexbox.</p>
-                        </div>
-                        <footer class="card-footer card-f">
-                            <button class="btn text-capitalize mb-2">
-                                <a href="https://github.com/zzeekko/detroix" class="card-f-link link">Source Code</a>
-                            </button>
-                        </footer>
+        <section class="section" id="aboutSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h2 class="text-uppercase heading">who am I?</h2>
+                        <p>I've been broke my whole life, doing everything I can to help my single mother take care of me and my brother. School was always a nightmare. Social anxiety ate away at me and I never felt stimulated by any of the things they wanted me to do. I felt like I already knew it and I had no desire to show up. Combined with having to constantly move due to rent getting too high, I was unable to finish. This ended with me, my mother and a bunch of teachers in a room where they told us that they weren't equipped for me and that I should pursue homeschooling. My mother wanted to do whatever she could for me but she was working two jobs and could not do what was needed, so that didn't work either. I've recently obtained my GED with relative ease. Finally, I've found my opportunity to pay back what everyone has done for me. I'm eager to get started working with anyone who's interested. My goal is to become a fullstack web developer and make enough money to support my dear family, as well as my boring hobbies. Preferably from home so that I don't have to be away from my girlfriend for too long at a time. I prefer to keep to myself but I also consider myself good at socializing. I read a lot of manga, I enjoy narrative analysis and I write <a href="https://www.scribblehub.com/series/598245/halcyon-heart/#:~:text=Four%20friends%20with%20differing%20beliefs%20are%20forced%20by%20a%20higher"> my own webnovel</a>, with art by my girlfriend. Since I was a kid, I've been messing with computer code. If you know about M.U.G.E.N, that was where my interest was born. I liked video games a lot and the idea of being able to make my own with people from around the world got me into problem solving through changing lines of code. It was annoying, but it was always rewarding when it worked out. I had a knack for finding solutions.</p>
+                        <p>
+                            If you're curious about some of my favorite pieces of media:
+                            <ul>
+                                <li>Yu-Gi-Oh</li>
+                                <li>Attack on Titan</li>
+                                <li>Persona</li>
+                                <li>Bleach</li>
+                                <li>Breaking Bad</li>
+                                <li>Guilty Gear</li>
+                            </ul>
+                        </p>
+                        <p>Talk to me about any of these, if you're bored.</p>
                     </div>
-                </div>
-                <div class="col">
-                    <!-- make this card a couple pixels taller -->
-                    <div class="card lead-items h-100">
-                        <header class="card-header card-h">
-                            <h2 class="card-h2">Bloom</h2>
-                            <img src="images/bloom.png" alt="Thumbnail for Bloom" class="w-100 img-fluid image card-img"/>
-                        </header>
-                        <div class="card-body card-bg">
-                            <p class="card-text">My first time using Bootstrap to make a responsive web page.</p>
-                        </div>
-                        <footer class="card-footer card-f">
-                            <button class="btn text-capitalize mb-2">
-                                <a href="https://github.com/zzeekko/bloom-bootstrap" class="card-f-link link">Source Code</a>
-                            </button>
-                        </footer>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card lead-items h-100">
-                        <header class="card-header card-h">
-                            <h2 class="card-h2">Scamazon</h2>
-                            <img src="images/scamazon.png" alt="Thumbnail for Scamazon" class="img-fluid image card-img"/>
-                        </header>
-                        <div class="card-body card-bg">
-                            <p class="card-text">An early Bootstrap project of mine with a focus on design.</p>
-                        </div>
-                        <footer class="card-footer card-f">
-                            <button class="btn text-capitalize mb-2">
-                                <a href="https://github.com/zzeekko/scamazon" class="card-f-link link">Source Code</a>
-                            </button>
-                        </footer>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card lead-items h-100">
-                        <header class="card-header card-h">
-                            <h2 class="card-h2">Restaurant</h2>
-                            <img src="images/restaurant.png" alt="Thumbnail for Restaurant" class="img-fluid image card-img"/>
-                        </header>
-                        <div class="card-body card-bg">
-                            <p class="card-text">My first project focused on making multiple responsive pages.</p>
-                        </div>
-                        <footer class="card-footer card-f">
-                            <button class="btn text-capitalize mb-2">
-                                <a href="https://github.com/zzeekko/restaurant" class="card-f-link link">Source Code</a>
-                            </button>
-                        </footer>
+                    <div class="col-md-5">
+                        <figure>
+                            <img src="https://via.placeholder.com/250x250" alt="Photo of me coding." class="img-fluid image" />
+                            <figcaption class="text-capitalize text-center"><i class="bi bi-arrow-90deg-up"></i>also me</figcaption>
+                        </figure>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="section" id="projectsSection">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="row gy-3 row-cols-1 row-cols-md-2">
+                    <!-- make these sites live (except detroix) -->
+                    <div class="col">
+                        <div class="card lead-items h-100">
+                            <header class="card-header card-h">
+                                <h2 class="card-h2">Detroix</h2>
+                                <img src="images/detroix.png" alt="Thumbnail for Detroix" class="img-fluid image card-img"/>
+                            </header>
+                            <div class="card-body card-bg">
+                                <p class="card-text">My first project. Three stylesheets each for Float, Position and Flexbox.</p>
+                            </div>
+                            <footer class="card-footer card-f">
+                                <button class="btn text-capitalize mb-2">
+                                    <a href="https://github.com/zzeekko/detroix" class="card-f-link link">Source Code</a>
+                                </button>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card lead-items h-100">
+                            <header class="card-header card-h">
+                                <h2 class="card-h2">Bloom</h2>
+                                <img src="images/bloom.png" alt="Thumbnail for Bloom" class="w-100 img-fluid image card-img"/>
+                            </header>
+                            <div class="card-body card-bg">
+                                <p class="card-text">My first time using Bootstrap to make a responsive web page.</p>
+                            </div>
+                            <footer class="card-footer card-f">
+                                <button class="btn text-capitalize mb-2">
+                                    <a href="https://github.com/zzeekko/bloom-bootstrap" class="card-f-link link">Source Code</a>
+                                </button>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card lead-items h-100">
+                            <header class="card-header card-h">
+                                <h2 class="card-h2">Scamazon</h2>
+                                <img src="images/scamazon.png" alt="Thumbnail for Scamazon" class="img-fluid image card-img"/>
+                            </header>
+                            <div class="card-body card-bg">
+                                <p class="card-text">An early Bootstrap project of mine with a focus on design.</p>
+                            </div>
+                            <footer class="card-footer card-f">
+                                <button class="btn text-capitalize mb-2">
+                                    <a href="https://github.com/zzeekko/scamazon" class="card-f-link link">Source Code</a>
+                                </button>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card lead-items h-100">
+                            <header class="card-header card-h">
+                                <h2 class="card-h2">Restaurant</h2>
+                                <img src="images/restaurant.png" alt="Thumbnail for Restaurant" class="img-fluid image card-img"/>
+                            </header>
+                            <div class="card-body card-bg">
+                                <p class="card-text">My first project focused on making multiple responsive pages.</p>
+                            </div>
+                            <!-- work on these buttons' design -->
+                            <footer class="card-footer card-f">
+                                <button class="btn-danger-border-subtle text-capitalize mb-2">
+                                    <a href="https://github.com/zzeekko/restaurant" class="card-f-link link">Source Code</a>
+                                </button>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer" id="footer">
         <section class="section" id="footerSection2">
@@ -212,7 +216,7 @@
                         </li>
                     </ul>
                 </nav>
-                <!-- edited version of this code: https://blog.getform.io/how-to-create-an-html-form-that-sends-you-an-email/ -->
+                <!-- heavily edited version of this code: https://blog.getform.io/how-to-create-an-html-form-that-sends-you-an-email/ it's hard to tell they're the same but i figured i should source it anyway -->
                 <h2 class="text-uppercase heading">email me:</h2>
                 <form action="mailto:ezfirststep@gmail.com"
                 method="POST"
@@ -237,7 +241,7 @@
                     <textarea name="Contact-Message" rows="6″ cols="20″ class="form-control" id="contactMessage">
                     </textarea>
                 </div>
-                <button type="submit" value="Submit">Send</button>
+                <button type="submit" value="Submit" class="btn btn-secondary btn-sm">Send</button>
                 </form>  
             </div>
         </section>
