@@ -16,11 +16,23 @@
         <section class="section" id="headerSection">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5">
-                        <!-- see how this looks if you put the name on top of the nav and put them both in the center -->
-                        <h1 class="heading text-uppercase">zeek</h1>
+                    <div class="col-md-4">
+                        <nav class="nav top-nav justify-content-md-end d-none d-md-flex">
+                            <ul class="d-flex top-nav">
+                                <li class="nav-item">
+                                    <a href="#homeSection" class="link nav-link text-capitalize text-decoration-none">home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#aboutSection" class="link nav-link text-capitalize text-decoration-none">about me</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-4">
+                        <!-- see how this looks if you put the name on top of the nav and put them both in the center -->
+                        <h1 class="heading text-uppercase d-flex justify-content-center">zeek</h1>
+                    </div>
+                    <div class="col-md-4">
                         <nav class="navbar navbar-expand-xl d-md-none">
                             <div class="container-fluid">
                                 <button
@@ -52,14 +64,9 @@
                                 </nav>
                             </div>
                         </nav>
-                        <nav class="nav top-nav justify-content-md-end d-none d-md-flex">
+                        <!-- this part of the nav needs to be centered more, also see if you can figure out how to stop "about me" and "contact me" from splitting up when viewing on a tablet -->
+                        <nav class="nav top-nav justify-content-start d-none d-md-flex">
                             <ul class="d-flex top-nav">
-                                <li class="nav-item">
-                                    <a href="#homeSection" class="link nav-link text-capitalize text-decoration-none">home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#aboutSection" class="link nav-link text-capitalize text-decoration-none">about me</a>
-                                </li>
                                 <li class="nav-item">
                                     <a href="#projectsSection" class="link nav-link text-capitalize text-decoration-none">projects</a>
                                 </li>     
