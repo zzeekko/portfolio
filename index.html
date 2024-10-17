@@ -20,6 +20,7 @@
                         <nav class="nav top-nav justify-content-md-end d-none d-md-flex">
                             <ul class="d-flex top-nav">
                                 <li class="nav-item">
+                                    <!-- ask coach if theres a cleaner way to center these besides using margin and padding -->
                                     <a href="#homeSection" class="link nav-link text-capitalize text-decoration-none">home</a>
                                 </li>
                                 <li class="nav-item">
@@ -29,7 +30,6 @@
                         </nav>
                     </div>
                     <div class="col-md-4">
-                        <!-- see how this looks if you put the name on top of the nav and put them both in the center -->
                         <h1 class="heading text-uppercase d-flex justify-content-center">zeek</h1>
                     </div>
                     <div class="col-md-4">
@@ -92,7 +92,7 @@
                                 <img src="images/Headshot.jpeg" alt="Headshot of me, Zeek" class="img-fluid rounded-3">
                                 <figcaption class="text-capitalize text-center"><i class="bi bi-arrow-90deg-up"></i>me</figcaption>
                             </figure> -->
-                            <p>I am Ezekiel Cary, a junior web developer at Mississippi Coding Academies' Jackson campus. Call me Zeek, though. I'm a quick learner willing to learn any new language if it's for the sake of a client. Just don't ask me to come up with any designs by myself. I don't do aesthetics very well, I prefer to translate other peoples' designs into functioning code. I work quickly and efficiently and I don't take unnecessary liberties.</p>
+                            <p>I am Ezekiel Cary, a junior web developer at Mississippi Coding Academies' Jackson campus. Call me Zeek, though. I'm a quick learner willing to learn any new language if it's for the sake of a client who pays right. That said, I will not work on any projects that I find unethical. Just don't ask me to come up with any designs by myself. I don't do aesthetics very well, I prefer to translate other peoples' designs into functioning code. I work quickly and efficiently and I don't take unnecessary liberties.</p>
                             <p>I look forward to working with you.</p>
                         </div>
                     </div>
@@ -106,7 +106,7 @@
             </div>
         </section>
         <section class="section" id="aboutSection">
-            <div class="container">
+            <div class="container p-4">
                 <div class="row">
                     <div class="col-md-7">
                         <h2 class="text-uppercase heading">who am I?</h2>
@@ -134,7 +134,7 @@
             </div>
         </section>
         <section class="section" id="projectsSection">
-            <div class="container">
+            <div class="container p-4">
                 <h2>Projects</h2>
                 <div class="row gy-3 row-cols-1 row-cols-md-2">
                     <!-- make these sites live (except detroix) -->
@@ -197,8 +197,9 @@
                             </div>
                             <!-- work on these buttons' design -->
                             <footer class="card-footer card-f">
+                                <!-- btn-danger-border-subtle doesnt seem to be doing anything anymore, and card-f-btn/btn dont work the way i want either -->
                                 <button class="btn-danger-border-subtle text-capitalize mb-2">
-                                    <a href="https://github.com/zzeekko/restaurant" class="card-f-link link">Source Code</a>
+                                    <a href="https://github.com/zzeekko/restaurant" class="btn card-btn link">Source Code</a>
                                 </button>
                             </footer>
                         </div>
@@ -248,8 +249,9 @@
                     <textarea name="Contact-Message" rows="6″ cols="20″ class="form-control" id="contactMessage">
                     </textarea>
                 </div>
-                <button type="submit" value="Submit" class="btn btn-secondary btn-sm">Send</button>
-                </form>  
+                <button type="submit" value="Submit" class="btn send-btn btn-sm">Send</button>
+                </form>
+                <!-- end of referenced code -->
             </div>
         </section>
         <section class="section" id="footerSection2">

@@ -1,11 +1,12 @@
 /* these colors are ugly, work with someone who has better taste on this */
 
 :root {
-    --prim: #DEF2C8;
-    --sec: #D0A3BF;
+    --prim: #BCF8EC;
+    --sec: #9D695A;
     --tert: #69747C;
+    --about: #FCEFF9;
     --purple: #0F110C;
-    --orange: #69747C;
+    --card: #8B5FBF;
     --font1: "Libre Baskerville", serif;
     --font2: "Dela Gothic One", sans-serif;
     --font3: "Sedgwick Ave", cursive;
@@ -18,12 +19,16 @@
 
 /* change it so that the bg colors go across the whole width */
 
+.card-btn {
+    color: var(--purple);
+}
+
 .card-bg {
-    background-color: var(--orange);
+    background-color: var(--card);
 }
 
 .card-h {
-    background-color: var(--orange);
+    background-color: var(--card);
 }
 
 .card-h2 {
@@ -50,11 +55,17 @@
 }
 
 .nav-link {
-    color: #444;
+    color: #001427;
 }
 
 .nav-link:hover {
-    color: var(--orange);
+    border-radius: 5px;
+    border: 1px solid #32909A;
+    color: #32909A;
+}
+
+.send-btn {
+    background-color: #001427;
 }
 
 .social-link {
@@ -63,6 +74,10 @@
 
 .top-nav, .bottom-nav {
     list-style-type: none;
+}
+
+#aboutSection {
+    background-color: var(--about);
 }
 
 #homeSection, #projectsSection {
