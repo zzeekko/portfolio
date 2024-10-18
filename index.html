@@ -12,27 +12,28 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <!-- ask if there is a way to make this stick to the top -->
+    <!-- there's some white on the bottom of the page, ask about that -->
     <header class="header" id="header">
         <section class="section" id="headerSection">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
-                        <nav class="nav top-nav justify-content-md-end d-none d-md-flex">
-                            <ul class="d-flex top-nav">
-                                <li class="nav-item">
-                                    <!-- ask coach if theres a cleaner way to center these besides using margin and padding -->
-                                    <a href="#homeSection" class="link nav-link text-capitalize text-decoration-none">home</a>
+                    <div class="col-md-5">
+                        <nav>
+                            <ul class="nav top-nav justify-content-md-end d-none d-md-flex">
+                                <li class="nav-item top-nav-item">
+                                    <a href="#homeSection" class="link nav-link top-nav-link text-capitalize text-decoration-none">home</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="#aboutSection" class="link nav-link text-capitalize text-decoration-none">about me</a>
+                                <li class="nav-item top-nav-item">
+                                    <a href="#aboutSection" class="link nav-link top-nav-link text-capitalize text-decoration-none">about me</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-2">
                         <h1 class="heading text-uppercase d-flex justify-content-center">zeek</h1>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                         <nav class="navbar navbar-expand-xl d-md-none">
                             <div class="container-fluid">
                                 <button
@@ -49,29 +50,29 @@
                                 <nav class="collapse navbar-collapse" id="topNavbar">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a href="#homeSection" class="link nav-link text-capitalize text-decoration-none">home</a>
+                                            <a href="#homeSection" class="link nav-link top-nav-link text-capitalize text-decoration-none">home</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#aboutSection" class="link nav-link text-capitalize text-decoration-none">about me</a>
+                                            <a href="#aboutSection" class="link nav-link top-nav-link text-capitalize text-decoration-none">about me</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#projectsSection" class="link nav-link text-capitalize text-decoration-none">projects</a>
+                                            <a href="#projectsSection" class="link nav-link top-nav-link text-capitalize text-decoration-none">projects</a>
                                         </li>     
                                         <li class="nav-item">
-                                            <a href="#footer" class="link nav-link text-capitalize text-decoration-none">contact me</a>
+                                            <a href="#footer" class="link nav-link top-nav-link text-capitalize text-decoration-none">contact me</a>
                                         </li>
                                     </ul>
                                 </nav>
                             </div>
                         </nav>
                         <!-- this part of the nav needs to be centered more, also see if you can figure out how to stop "about me" and "contact me" from splitting up when viewing on a tablet -->
-                        <nav class="nav top-nav justify-content-start d-none d-md-flex">
-                            <ul class="d-flex top-nav">
-                                <li class="nav-item">
-                                    <a href="#projectsSection" class="link nav-link text-capitalize text-decoration-none">projects</a>
+                        <nav>
+                            <ul class="nav top-nav justify-content-start d-none d-md-flex">
+                                <li class="nav-item top-nav-item">
+                                    <a href="#projectsSection" class="link nav-link top-nav-link text-capitalize text-decoration-none">projects</a>
                                 </li>     
-                                <li class="nav-item">
-                                    <a href="#footer" class="link nav-link text-capitalize text-decoration-none">contact me</a>
+                                <li class="nav-item top-nav-item">
+                                    <a href="#footer" class="link nav-link top-nav-link text-capitalize text-decoration-none">contact me</a>
                                 </li>
                             </ul>
                         </nav>
@@ -92,13 +93,13 @@
                                 <img src="images/Headshot.jpeg" alt="Headshot of me, Zeek" class="img-fluid rounded-3">
                                 <figcaption class="text-capitalize text-center"><i class="bi bi-arrow-90deg-up"></i>me</figcaption>
                             </figure> -->
-                            <p>I am Ezekiel Cary, a junior web developer at Mississippi Coding Academies' Jackson campus. Call me Zeek, though. I'm a quick learner willing to learn any new language if it's for the sake of a client who pays right. That said, I will not work on any projects that I find unethical. Just don't ask me to come up with any designs by myself. I don't do aesthetics very well, I prefer to translate other peoples' designs into functioning code. I work quickly and efficiently and I don't take unnecessary liberties.</p>
+                            <p>I am Ezekiel Cary, a junior web developer at Mississippi Coding Academies' Jackson campus. Call me Zeek, though. I currently know html, css and Bootstrap. I'm a quick learner willing to try out any new language if it's for the sake of a client who pays right. That said, I will not work on any projects that I find unethical. Just don't ask me to come up with any designs by myself. I don't do aesthetics very well, I prefer to translate other peoples' designs into functioning code. I work quickly and efficiently and I don't take unnecessary liberties.</p>
                             <p>I look forward to working with you.</p>
                         </div>
                     </div>
                     <div class="col-md-5">
                         <figure class="figure">
-                            <img src="images/Headshot.jpeg" alt="Headshot of me, Zeek" class="img-fluid rounded-3">
+                            <img src="images/Headshot.jpeg" alt="Headshot of me, Zeek" class="img-fluid rounded-3 pt-md-0 pt-5">
                             <figcaption class="text-capitalize text-center"><i class="bi bi-arrow-90deg-up"></i>me</figcaption>
                         </figure>
                     </div>
@@ -108,6 +109,12 @@
         <section class="section" id="aboutSection">
             <div class="container p-4">
                 <div class="row">
+                    <div class="col-md-5">
+                        <figure>
+                            <img src="https://via.placeholder.com/250x250" alt="Photo of me coding." class="img-fluid image" />
+                            <figcaption class="text-capitalize text-center"><i class="bi bi-arrow-90deg-up"></i>also me</figcaption>
+                        </figure>
+                    </div>
                     <div class="col-md-7">
                         <h2 class="text-uppercase heading">who am I?</h2>
                         <p>I've been broke my whole life, doing everything I can to help my single mother take care of me and my brother. School was always a nightmare. Social anxiety ate away at me and I never felt stimulated by any of the things they wanted me to do. I felt like I already knew it and I had no desire to show up. Combined with having to constantly move due to rent getting too high, I was unable to finish. This ended with me, my mother and a bunch of teachers in a room where they told us that they weren't equipped for me and that I should pursue homeschooling. My mother wanted to do whatever she could for me but she was working two jobs and could not do what was needed, so that didn't work either. I've recently obtained my GED with relative ease. Finally, I've found my opportunity to pay back what everyone has done for me. I'm eager to get started working with anyone who's interested. My goal is to become a fullstack web developer and make enough money to support my dear family, as well as my boring hobbies. Preferably from home so that I don't have to be away from my girlfriend for too long at a time. I prefer to keep to myself but I also consider myself good at socializing. I read a lot of manga, I enjoy narrative analysis and I write <a href="https://www.scribblehub.com/series/598245/halcyon-heart/#:~:text=Four%20friends%20with%20differing%20beliefs%20are%20forced%20by%20a%20higher"> my own webnovel</a>, with art by my girlfriend. Since I was a kid, I've been messing with computer code. If you know about M.U.G.E.N, that was where my interest was born. I liked video games a lot and the idea of being able to make my own with people from around the world got me into problem solving through changing lines of code. It was annoying, but it was always rewarding when it worked out. I had a knack for finding solutions.</p>
@@ -124,20 +131,13 @@
                         </p>
                         <p>Talk to me about any of these, if you're bored.</p>
                     </div>
-                    <div class="col-md-5">
-                        <figure>
-                            <img src="https://via.placeholder.com/250x250" alt="Photo of me coding." class="img-fluid image" />
-                            <figcaption class="text-capitalize text-center"><i class="bi bi-arrow-90deg-up"></i>also me</figcaption>
-                        </figure>
-                    </div>
                 </div>
             </div>
         </section>
         <section class="section" id="projectsSection">
             <div class="container p-4">
-                <h2>Projects</h2>
-                <div class="row gy-3 row-cols-1 row-cols-md-2">
-                    <!-- make these sites live (except detroix) -->
+                <h2 class="projects-text">Projects</h2>
+                <div class="row gy-3 row-cols-1 row-cols-md-1">
                     <div class="col">
                         <div class="card lead-items h-100">
                             <header class="card-header card-h">
@@ -148,9 +148,7 @@
                                 <p class="card-text">My first project. Three stylesheets each for Float, Position and Flexbox.</p>
                             </div>
                             <footer class="card-footer card-f">
-                                <button class="btn text-capitalize mb-2">
-                                    <a href="https://github.com/zzeekko/detroix" class="card-f-link link">Source Code</a>
-                                </button>
+                                <a href="https://github.com/zzeekko/detroix" target="_blank"  class="card-link btn btn-outline-info text-capitalize">Source Code</a>
                             </footer>
                         </div>
                     </div>
@@ -164,9 +162,9 @@
                                 <p class="card-text">My first time using Bootstrap to make a responsive web page.</p>
                             </div>
                             <footer class="card-footer card-f">
-                                <button class="btn text-capitalize mb-2">
-                                    <a href="https://github.com/zzeekko/bloom-bootstrap" class="card-f-link link">Source Code</a>
-                                </button>
+                                <a href="https://github.com/zzeekko/bloom-bootstrap" target="_blank" class="card-link btn btn-outline-info text-capitalize">Source Code</a>
+                                <a href="https://zzeekko.github.io/bloom-bootstrap/" target="_blank" class="card-link btn btn-outline-success text-capitalize">Live Site</a>
+                                <!-- the live site button doesnt look good on mobile, work on that -->
                             </footer>
                         </div>
                     </div>
@@ -180,9 +178,8 @@
                                 <p class="card-text">An early Bootstrap project of mine with a focus on design.</p>
                             </div>
                             <footer class="card-footer card-f">
-                                <button class="btn text-capitalize mb-2">
-                                    <a href="https://github.com/zzeekko/scamazon" class="card-f-link link">Source Code</a>
-                                </button>
+                                <a href="https://github.com/zzeekko/scamazon" target="_blank" class="card-link btn btn-outline-info text-capitalize">Source Code</a>
+                                <a href="https://zzeekko.github.io/scamazon/" target="_blank" class="card-link btn btn-outline-success text-capitalize">Live Site</a>
                             </footer>
                         </div>
                     </div>
@@ -195,12 +192,9 @@
                             <div class="card-body card-bg">
                                 <p class="card-text">My first project focused on making multiple responsive pages.</p>
                             </div>
-                            <!-- work on these buttons' design -->
                             <footer class="card-footer card-f">
-                                <!-- btn-danger-border-subtle doesnt seem to be doing anything anymore, and card-f-btn/btn dont work the way i want either -->
-                                <button class="btn-danger-border-subtle text-capitalize mb-2">
-                                    <a href="https://github.com/zzeekko/restaurant" class="btn card-btn link">Source Code</a>
-                                </button>
+                                <a href="https://github.com/zzeekko/restaurant" class="card-link btn btn-outline-info text-capitalize">Source Code</a>
+                                <a href="https://zzeekko.github.io/restaurant/" class="card-link btn btn-outline-success text-capitalize">Live Site</a>
                             </footer>
                         </div>
                     </div>
@@ -214,13 +208,13 @@
                 <nav class="social-nav">
                     <ul class="nav bottom-nav justify-content-center justify-content-md-start">
                         <li class="nav-item">
-                            <a href="https://x.com/ezzeekkiel" class="link nav-link"><i class="bi bi-twitter social-icon"></i><span class="visually-hidden">Twitter</span></a>
+                            <a href="https://x.com/ezzeekkiel" target="_blank" class="link nav-link social-link"><i class="bi bi-twitter social-icon"></i><span class="visually-hidden">Twitter</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="https://www.linkedin.com/in/ezekiel-cary-48aa06331/" class="link nav-link"><i class="bi bi-linkedin social-icon"></i><span class="visually-hidden">LinkedIn</span></a>
+                            <a href="https://www.linkedin.com/in/ezekiel-cary-48aa06331/" target="_blank" class="link nav-link social-link"><i class="bi bi-linkedin social-icon"></i><span class="visually-hidden">LinkedIn</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="https://github.com/zzeekko" class="link nav-link"><i class="bi bi-github social-icon"></i><span class="visually-hidden">Github</span></a>
+                            <a href="https://github.com/zzeekko" target="_blank" class="link nav-link social-link"><i class="bi bi-github social-icon"></i><span class="visually-hidden">Github</span></a>
                         </li>
                     </ul>
                 </nav>
@@ -249,18 +243,18 @@
                     <textarea name="Contact-Message" rows="6″ cols="20″ class="form-control" id="contactMessage">
                     </textarea>
                 </div>
-                <button type="submit" value="Submit" class="btn send-btn btn-sm">Send</button>
+                <button type="submit" value="Submit" class="btn send-btn btn-sm btn-primary">Send</button>
                 </form>
                 <!-- end of referenced code -->
             </div>
         </section>
         <section class="section" id="footerSection2">
             <div class="container">
-                <p class="fs2-text colophon text-capitalize">read
-                    <a href="https://tirkom.thecomicseries.com/" target="_blank" class="fs2-text text-decoration-none">tirkom</a>
+                <p class="fs2-clickable colophon text-capitalize text-muted">
+                    <a href="https://tirkom.thecomicseries.com/" target="_blank" class="fs2-clickable text-dark">read tirkom</a>
                     &copy; 2024
                 </p>
-                <p><a href="#header" class="fs2-text text-center text-md-start text-decoration-none">Back to Top</a></p>
+                <p class="fs2-clickable"><a href="#header" class="fs2-clickable text-muted text-center text-md-start">Back to Top</a></p>
             </div>
         </section>
     </footer>
