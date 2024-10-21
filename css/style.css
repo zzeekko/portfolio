@@ -2,7 +2,7 @@
 
 :root {
     --prim: #BCF8EC;
-    --sec: #9D695A;
+    --sec: #C99A8D;
     --tert: #69747C;
     --about: #FCEFF9;
     --purple: #0F110C;
@@ -47,12 +47,13 @@ body {
 
 .fs2-clickable {
     font-family: var(--font2);
+    color: #2F2F2F;
 }
 
 /* text-decoration:none works but color doesn't, i dont know why */
 .fs2-clickable:hover {
     text-decoration: none;
-    color: red;
+    color: #5B136F;
 }
 
 .heading {
@@ -70,8 +71,12 @@ body {
 
 .top-nav-link:hover {
     border-radius: 5px;
-    border: 1px solid #32909A;
-    color: #32909A;
+    border: 1px solid #5B136F;
+    color: #5B136F;
+}
+
+.projects-link {
+    font-size: x-small;
 }
 
 .projects-text {
@@ -79,11 +84,15 @@ body {
 }
 
 .send-btn {
-    background-color: #001427;
+    background-color: var(--purple);
 }
 
 .social-link {
     color: var(--purple);
+}
+
+.social-link:hover {
+    color: #5B136F;
 }
 
 .top-nav, .bottom-nav {

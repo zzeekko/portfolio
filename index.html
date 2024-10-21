@@ -50,6 +50,7 @@
                                 <nav class="collapse navbar-collapse" id="topNavbar">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
+                                            <!-- the transition on these leaves the banner covering the top of the section, ask if theres a solution to that -->
                                             <a href="#homeSection" class="link nav-link top-nav-link text-capitalize text-decoration-none">home</a>
                                         </li>
                                         <li class="nav-item">
@@ -148,7 +149,7 @@
                                 <p class="card-text">My first project. Three stylesheets each for Float, Position and Flexbox.</p>
                             </div>
                             <footer class="card-footer card-f">
-                                <a href="https://github.com/zzeekko/detroix" target="_blank"  class="card-link btn btn-outline-info text-capitalize">Source Code</a>
+                                <a href="https://github.com/zzeekko/detroix" target="_blank"  class="card-link btn btn-outline-info text-capitalize projects-link">Source Code</a>
                             </footer>
                         </div>
                     </div>
@@ -156,6 +157,7 @@
                         <div class="card lead-items h-100">
                             <header class="card-header card-h">
                                 <h2 class="card-h2">Bloom</h2>
+                                <!-- this pic isnt the same size as the others -->
                                 <img src="images/bloom.png" alt="Thumbnail for Bloom" class="w-100 img-fluid image card-img"/>
                             </header>
                             <div class="card-body card-bg">
@@ -164,13 +166,14 @@
                             <footer class="card-footer card-f">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <a href="https://github.com/zzeekko/bloom-bootstrap" target="_blank" class="card-link btn btn-outline-info text-capitalize">Source Code</a>
+                                        <a href="https://github.com/zzeekko/bloom-bootstrap" target="_blank" class="card-link btn btn-outline-info text-capitalize projects-link">Source Code</a>
                                     </div>
                                     <div class="col-md-6">
-                                        <a href="https://zzeekko.github.io/bloom-bootstrap/" target="_blank" class="card-link btn btn-outline-success text-capitalize">Live Site</a>
+                                        <div class="d-flex justify-content-center justify-content-md-end">
+                                            <a href="https://zzeekko.github.io/bloom-bootstrap/" target="_blank" class="card-link btn btn-outline-success text-capitalize projects-link">Live Site</a>
+                                        </div>
                                     </div>
                                 </div>
-                                <!-- see if you can make the live site buttons have better spacing -->
                             </footer>
                         </div>
                     </div>
@@ -186,10 +189,12 @@
                             <footer class="card-footer card-f">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <a href="https://github.com/zzeekko/scamazon" target="_blank" class="card-link btn btn-outline-info text-capitalize">Source Code</a>
+                                        <a href="https://github.com/zzeekko/scamazon" target="_blank" class="card-link btn btn-outline-info text-capitalize projects-link">Source Code</a>
                                     </div>
                                     <div class="col-md-6">
-                                        <a href="https://zzeekko.github.io/scamazon/" target="_blank" class="card-link btn btn-outline-success text-capitalize">Live Site</a>
+                                        <div class="d-flex justify-content-center justify-content-md-end">
+                                            <a href="https://zzeekko.github.io/scamazon/" target="_blank" class="card-link btn btn-outline-success text-capitalize projects-link">Live Site</a>
+                                        </div>
                                     </div>
                             </footer>
                         </div>
@@ -205,11 +210,13 @@
                             </div>
                             <footer class="card-footer card-f">
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <a href="https://github.com/zzeekko/restaurant" class="card-link btn btn-outline-info text-capitalize">Source Code</a>
+                                    <div class="col-6">
+                                        <a href="https://github.com/zzeekko/restaurant" class="card-link btn btn-outline-info text-capitalize projects-link">Source Code</a>
                                     </div>
-                                    <div class="col-md-6 justify-content-md-end">
-                                        <a href="https://zzeekko.github.io/restaurant/" class="card-link btn btn-outline-success text-capitalize">Live Site</a>
+                                    <div class="col-6">
+                                        <div class="d-flex justify-content-center justify-content-md-end">
+                                            <a href="https://zzeekko.github.io/restaurant/" class="card-link btn btn-outline-success text-capitalize projects-link">Live Site</a>
+                                        </div>
                                     </div>
                                 </div>
                             </footer>
@@ -236,42 +243,43 @@
                     </ul>
                 </nav>
                 <!-- heavily edited version of this code: https://blog.getform.io/how-to-create-an-html-form-that-sends-you-an-email/ it's hard to tell they're the same but i figured i should source it anyway -->
-                <h2 class="text-uppercase heading">email me:</h2>
-                <form action="mailto:ezfirststep@gmail.com"
-                method="POST"
-                enctype="multipart/form-data"
-                name="EmailForm">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="contactName" class="form-label">Name</label>
-                            <input type="text" size="19" name="Contact-Name" class="form-control" id="contactName">
+                <div class="email-form p-3">
+                    <h2 class="text-uppercase heading pb-2">email me:</h2>
+                    <form action="mailto:ezfirststep@gmail.com"
+                    method="POST"
+                    enctype="multipart/form-data"
+                    name="EmailForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="contactName" class="form-label">Name</label>
+                                <input type="text" size="19" name="Contact-Name" class="form-control" id="contactName">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="contactEmail" class="form-label">Email</label>
+                                <input type="email" name="Contact-Email" class="form-control" id="contactEmail">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="contactEmail" class="form-label">Email</label>
-                            <input type="email" name="Contact-Email" class="form-control" id="contactEmail">
-                        </div>
+                    <div class="mb-3">
+                        <label for="contactMessage" class="form-label">Message</label>
+                        <textarea name="Contact-Message" rows="6″ cols="20″ class="form-control" id="contactMessage">
+                        </textarea>
                     </div>
+                    <button type="submit" value="Submit" class="btn send-btn btn-sm btn-secondary">Send</button>
+                    </form>
+                    <!-- end of referenced code -->
                 </div>
-                <div class="mb-3">
-                    <label for="contactMessage" class="form-label">Message</label>
-                    <textarea name="Contact-Message" rows="6″ cols="20″ class="form-control" id="contactMessage">
-                    </textarea>
-                </div>
-                <button type="submit" value="Submit" class="btn send-btn btn-sm btn-primary">Send</button>
-                </form>
-                <!-- end of referenced code -->
             </div>
         </section>
         <section class="section" id="footerSection2">
             <div class="container">
-                <p class="fs2-clickable colophon text-capitalize text-muted">
-                    <a href="https://tirkom.thecomicseries.com/" target="_blank" class="fs2-clickable text-dark">read tirkom</a>
+                <p class="colophon text-capitalize">
+                    <a href="https://tirkom.thecomicseries.com/" target="_blank" class="fs2-clickable">read tirkom</a>
                     &copy; 2024
                 </p>
-                <p class="fs2-clickable"><a href="#header" class="fs2-clickable text-muted text-center text-md-start">Back to Top</a></p>
             </div>
         </section>
     </footer>
